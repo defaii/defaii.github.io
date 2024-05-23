@@ -1,0 +1,306 @@
+body{
+    background-color: #000000;
+    color: gold;
+}
+header{
+    margin-top: 20px;
+    padding-bottom: 2rem;
+}
+header h1 {
+    display: none;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#logoimg {
+    height: 50%;
+    width: 50%;
+}
+
+#pannel {
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+    text-decoration: none;
+    padding-bottom: 2rem;
+}
+
+#pannel ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#pannel ul li {
+    padding: 10px;
+    margin: 2px;
+}
+
+#pannel a {
+    display: block;
+    text-decoration: none;
+    color: gold;
+
+    text-align: center;
+    padding: 15px 75px
+}
+
+#pannel a:hover {
+    color: rgb(255, 242, 171);
+    background-color: #4c4f3d;
+}
+
+main{
+    background-color: #31312f;
+    padding: 5px;
+    padding-top: 55px;
+}
+main article{
+    display: flex;
+    flex-direction: column; 
+}
+main article h2{
+    color: #238913;
+    font-size: 120%;
+    padding-bottom: 20px;
+}
+#accueil1{
+    display: flex;
+    flex-direction: column;
+}
+#accueil1 p{
+    padding-bottom: 30px;
+}
+#image1{
+    padding-bottom: 30px;
+}
+#horaire{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+    padding-left: 40px;
+}
+.jour{
+    display: flex;
+    flex-direction: row;
+}
+.jour p{
+    padding: 5px;
+}
+.fermer{
+    color: #ff0000;
+}
+main article div a{
+    color: #00FFFF;
+}
+main article div a:hover {
+    color: #26ff00;
+}
+footer {
+    background-color: #950606;  
+    margin-top: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.footer-left,
+.footer-right {
+    width: 50%;
+}
+
+.footer-left h4,
+.footer-right h4 {
+    color: #ffffff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-left p,
+.footer-right p {
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 12px;
+}
+/*menu*/
+
+#menu article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#menu article h2{
+    display: none;
+}
+#menuimg{
+    width: 300px;
+    text-align: center;
+}
+#menu article div{
+    display: flex;
+    flex-direction: row;
+}
+#menu article h3{
+    color: #6a40de;
+    font-size: 110%;
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+#menu h4{
+    color: #e91123;
+    font-size: 105%;
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+#menu article div section div{
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+#menu article aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#boisson div h4{
+    padding-top: 0;
+}
+#end{
+    margin-top: 30px;
+    font-size: 95%;
+    text-align: center;
+}
+#end a{
+    text-decoration: none;
+    color: #00FFFF;
+}
+#end a:hover{
+    color: #26ff00;
+}
+/*a propos*/
+#propos{
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1rem;
+}
+#propos article{
+    flex-direction: column;
+}
+#propos article h3{
+    color: #14a314;
+    size: 1rem;
+}
+#propos article p{
+    text-align: center;
+    padding: 15px;
+    
+}
+#propos a{
+    text-decoration: none;
+    color: #00FFFF;
+}
+#propos a:hover{
+    color: #26ff00;
+}
+/*reservation*/
+#reservation{
+    padding: 20px;
+}
+#reservation h2{
+    color: #238913;
+}
+#reservation{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+#reservation div{
+    display: flex;
+    justify-content: center;
+}
+@media screen and (max-width:800px){
+    #menu article div{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:400px){
+    #logoimg{
+        width: 30%;
+        height: 30%;
+    }
+}
+@media screen and (min-width:725px) {
+    #pannel ul{
+        flex-direction: column;
+        height: 0.8vw;
+        margin: 30px;
+        padding: 15px;
+    }
+}
+@media screen and (min-width:600px){
+    #logoimg{
+        width: 25%;
+        height: 25%;
+    }
+}
+@media screen and (min-width:800px){
+    main article{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+    }
+    #accueil1{
+        width: 35%;
+    }
+    #image1{
+        width: 35%;
+    }
+    main article aside{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #horaire{
+        width: 30%;
+        font-size: large;
+        display: flex;
+        flex-direction: column;
+    }
+    #horaire div{
+        width: 100%;
+    }
+    .jour{
+        width: 100%;
+        font-size: 80%;
+    }
+    main article aside div{
+        width: 80%;
+    }   
+}
+@media screen and (min-width:900px){
+    #logoimg{
+        width: 15%;
+        height: 15%;
+    }
+}
