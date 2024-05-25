@@ -81,18 +81,13 @@ main {
     transition: transform 0.5s cubic-bezier(0.39, 1.04, 0.97, 0.76);
 }
 
-#index #map:hover {
-    transform: scale(1.1); /* Ajustez cette valeur selon la taille souhaitée */
-}
-
-#index #map img {
-    width: 30%;
-    height: 30%;
+#index #map a {
+    display: inline-block; /* Le lien prend la taille de l'image */
     transition: transform 0.5s cubic-bezier(0.39, 1.04, 0.97, 0.76);
 }
 
-#index #map:hover img {
-    transform: scale(2.5); /* Ajustez cette valeur pour un agrandissement moins prononcé */
+#index #map:hover {
+    transform: scale(1.2); /* Ajustez cette valeur selon la taille souhaitée */
 }
 
 main article h2 {
@@ -179,6 +174,15 @@ footer {
         width: 15%;
         height: 15%;
     }
+    #index #map img {
+        width: 300px; /* Taille moyenne fixe pour l'image */
+        height: auto; /* Maintient le ratio de l'image */
+        transition: transform 0.5s cubic-bezier(0.39, 1.04, 0.97, 0.76);
+    }
+    
+    #index #map:hover img {
+        transform: scale(2); /* Ajustez cette valeur pour un agrandissement moins prononcé */
+    }
 
     #personnages {
         text-align: center;
@@ -199,6 +203,7 @@ footer {
     .personnage a:hover {
         color: rgb(255, 242, 171);
         background-color: #4c4f3d;
+        transform: scale(1.2);
     }
 
     .personnage a div {
