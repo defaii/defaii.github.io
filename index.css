@@ -130,8 +130,8 @@ main article h2 {
 
 footer {
     background-color: #950606;
-    margin-top: 1rem;
 }
+
 
 .footer-content {
     display: flex;
@@ -161,6 +161,9 @@ footer {
     text-align: center;
     color: #ffffff;
     font-size: 12px;
+}
+.footer-bottom p{
+    margin: 0;
 }
 
 @media screen and (max-width: 800px) {
@@ -237,12 +240,5 @@ footer {
     .personnage a div {
         padding: 30px;
         width: 723px;
-    }
-    footer {
-        background-color: #950606;
-        margin-top: 0;
-    }
-    .footer-bottom p{
-        margin: 0;
     }
 }
