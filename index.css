@@ -56,8 +56,9 @@ header div {
     color: rgb(255, 242, 171);
     background-color: #4c4f3d;
 }
-.personnage img{
+.personnage figure a img{
     height: 50%;
+    width: 50%;
 }
 main{
     background-color: #31312f;
