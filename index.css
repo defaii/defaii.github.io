@@ -56,10 +56,7 @@ header div {
     color: rgb(255, 242, 171);
     background-color: #4c4f3d;
 }
-.image_perso{
-    height: 30%;
-    width: 30%;
-}
+
 main{
     background-color: #31312f;
     padding: 5px;
@@ -86,20 +83,17 @@ footer {
     padding-top: 1rem;
 }
 
-.footer-left,
-.footer-right {
+.footer-left,.footer-right {
     width: 50%;
 }
 
-.footer-left h4,
-.footer-right h4 {
+.footer-left h4, .footer-right h4 {
     color: #ffffff;
     font-size: 18px;
     margin-bottom: 10px;
 }
 
-.footer-left p,
-.footer-right p {
+.footer-left p, .footer-right p {
     color: #ffffff;
     font-size: 14px;
     margin-bottom: 5px;
@@ -144,37 +138,14 @@ footer {
         flex-direction: row;
         justify-content:space-around;
     }
-    #accueil1{
-        width: 35%;
-    }
-    #image1{
-        width: 35%;
-    }
-    main article aside{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    #horaire{
-        width: 30%;
-        font-size: large;
-        display: flex;
-        flex-direction: column;
-    }
-    #horaire div{
-        width: 100%;
-    }
-    .jour{
-        width: 100%;
-        font-size: 80%;
-    }
-    main article aside div{
-        width: 80%;
-    }   
 }
 @media screen and (min-width:900px){
     #logoimg{
         width: 15%;
         height: 15%;
+    }
+    .image_perso{
+        height: 30%;
+        width: 30%;
     }
 }
