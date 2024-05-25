@@ -144,8 +144,25 @@ footer {
         width: 15%;
         height: 15%;
     }
+    #personnages{
+        text-align: center;
+    }
     .image_perso{
-        height: 30%;
-        width: 30%;
+        width: 10%;
+    }
+    .personnage a{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly;
+        text-decoration: none;
+        color: gold
+    }
+    .personnage a:hover{
+        color: rgb(255, 242, 171);
+        background-color: #4c4f3d;
+    }
+    .personnage a div{
+        padding: 30px;
+        width: 723px;
     }
 }
