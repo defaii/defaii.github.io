@@ -1,11 +1,13 @@
-body{
+body {
     background-color: #000000;
     color: gold;
 }
-header{
+
+header {
     margin-top: 20px;
     padding-bottom: 2rem;
 }
+
 header h1 {
     display: none;
 }
@@ -47,9 +49,8 @@ header div {
     display: block;
     text-decoration: none;
     color: gold;
-
     text-align: center;
-    padding: 15px 75px
+    padding: 15px 75px;
 }
 
 #pannel a:hover {
@@ -57,22 +58,51 @@ header div {
     background-color: #4c4f3d;
 }
 
-main{
+main {
     background-color: #31312f;
     padding: 5px;
     padding-top: 55px;
 }
-main article{
+
+#index {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
+    align-items: center;
 }
-main article h2{
+
+#index section {
+    width: 100%;
+}
+
+#index #map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s cubic-bezier(0.39, 1.04, 0.97, 0.76);
+}
+
+#index #map:hover {
+    transform: scale(1.1); /* Ajustez cette valeur selon la taille souhaitée */
+}
+
+#index #map img {
+    width: 30%;
+    height: 30%;
+    transition: transform 0.5s cubic-bezier(0.39, 1.04, 0.97, 0.76);
+}
+
+#index #map:hover img {
+    transform: scale(2.5); /* Ajustez cette valeur pour un agrandissement moins prononcé */
+}
+
+main article h2 {
     color: #238913;
     font-size: 120%;
     padding-bottom: 20px;
 }
+
 footer {
-    background-color: #950606;  
+    background-color: #950606;
     margin-top: 1rem;
 }
 
@@ -83,7 +113,7 @@ footer {
     padding-top: 1rem;
 }
 
-.footer-left,.footer-right {
+.footer-left, .footer-right {
     width: 50%;
 }
 
@@ -106,62 +136,72 @@ footer {
     font-size: 12px;
 }
 
-@media screen and (max-width:800px){
-    #menu article div{
+@media screen and (max-width: 800px) {
+    #menu article div {
         display: flex;
         flex-direction: column;
     }
 }
-@media screen and (min-width:400px){
-    #logoimg{
+
+@media screen and (min-width: 400px) {
+    #logoimg {
         width: 30%;
         height: 30%;
     }
 }
-@media screen and (min-width:725px) {
-    #pannel ul{
+
+@media screen and (min-width: 725px) {
+    #pannel ul {
         flex-direction: column;
         height: 0.8vw;
         margin: 30px;
         padding: 15px;
     }
 }
-@media screen and (min-width:600px){
-    #logoimg{
+
+@media screen and (min-width: 600px) {
+    #logoimg {
         width: 25%;
         height: 25%;
     }
 }
-@media screen and (min-width:800px){
-    main article{
+
+@media screen and (min-width: 800px) {
+    main article {
         display: flex;
         flex-direction: row;
-        justify-content:space-around;
+        justify-content: space-around;
     }
 }
-@media screen and (min-width:900px){
-    #logoimg{
+
+@media screen and (min-width: 900px) {
+    #logoimg {
         width: 15%;
         height: 15%;
     }
-    #personnages{
+
+    #personnages {
         text-align: center;
     }
-    .image_perso{
+
+    .image_perso {
         width: 10%;
     }
-    .personnage a{
+
+    .personnage a {
         display: flex;
         flex-direction: row;
-        justify-content:space-evenly;
+        justify-content: space-evenly;
         text-decoration: none;
-        color: gold
+        color: gold;
     }
-    .personnage a:hover{
+
+    .personnage a:hover {
         color: rgb(255, 242, 171);
         background-color: #4c4f3d;
     }
-    .personnage a div{
+
+    .personnage a div {
         padding: 30px;
         width: 723px;
     }
