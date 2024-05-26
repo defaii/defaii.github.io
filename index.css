@@ -199,7 +199,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 725px) {
+@media screen and (min-width: 1300px) {
     #pannel ul {
         flex-direction: column;
         height: 0.8vw;
