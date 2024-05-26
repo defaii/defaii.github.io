@@ -52,6 +52,7 @@ header div {
     color: gold;
     text-align: center;
     padding: 15px 75px;
+    font-size: 1.1rem;
 }
 
 #pannel a:hover {
@@ -64,6 +65,7 @@ main {
     background-color: #31312f;
     padding: 5px;
     padding-top: 55px;
+    font-size: 1rem;
 }
 
 #index {
@@ -93,11 +95,6 @@ main {
     transform: scale(1.2); /* Ajustez cette valeur selon la taille souhaitée */
 }
 
-main article h2 {
-    color: #238913;
-    font-size: 120%;
-    padding-bottom: 20px;
-}
 #index #map img {
     width: 300px; /* Taille moyenne fixe pour l'image */
     height: auto; /* Maintient le ratio de l'image */
@@ -114,6 +111,7 @@ main article h2 {
     text-decoration: none;
     color: gold;
     text-align: center;
+    font-size: 1.2rem;
 }
 
 .personnage a:hover {
@@ -138,6 +136,7 @@ footer {
     justify-content: space-between;
     text-align: center;
     padding-top: 1rem;
+    font-size: 1rem;
 }
 
 .footer-left, .footer-right {
@@ -152,7 +151,7 @@ footer {
 
 .footer-left p, .footer-right p {
     color: #ffffff;
-    font-size: 14px;
+    font-size: 0.8rem;
     margin-bottom: 5px;
 }
 
@@ -205,6 +204,7 @@ footer {
 }
 
 @media screen and (min-width: 900px) {
+    
     #logoimg {
         width: 15%;
         height: 15%;
@@ -241,4 +241,38 @@ footer {
         padding: 30px;
         width: 723px;
     }
+    #joueur .personnage{
+        display: flex;
+        flex-direction: column;
+    }
+    #joueur .personnage .perso_separation{
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-evenly;
+    }
+    #joueur .image_perso{
+        width: 25%;
+    }
+    #joueur .texte_separation {
+        width: 60%;
+    }
+
+    /*aventure */
+    #aventure{
+        display: flex;
+        flex-direction: column;
+    }
+    #aventure article section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+    #aventure article section h2{
+        font-size: 1.8rem;
+    }
+    #aventure article section p{
+        text-align: center;
+        font-size: 1.2rem;
+
 }
