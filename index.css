@@ -164,6 +164,26 @@ footer {
 .footer-bottom p{
     margin: 0;
 }
+#joueur #personnages h2{
+    text-align: center;
+    align-items: center;
+}
+#joueur #personnages .texte_separation h3{
+    text-align: center;
+    align-items: center;
+}
+#joueur #personnages .texte_separation p{
+    text-align: center;
+    align-items: center;
+}
+#aventure article section{
+    text-align: center;
+
+}
+
+#aventure article section p{
+    text-align: center;
+}
 
 @media screen and (max-width: 800px) {
     #menu article div {
@@ -263,8 +283,6 @@ footer {
         flex-direction: column;
     }
     #aventure article section{
-        display: flex;
-        flex-direction: column;
         align-items: center;
 
     }
@@ -272,7 +290,6 @@ footer {
         font-size: 1.8rem;
     }
     #aventure article section p{
-        text-align: center;
-        font-size: 1.2rem;
-
+        font-size: 1.2rem
+    }
 }
