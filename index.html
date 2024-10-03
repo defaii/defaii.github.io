@@ -3,14 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travaux réalisé par defaii permet de faire une page de board pour ses travaux web">
     <link rel="stylesheet" href="style.css">
 
     <link rel="icon" href="defaii.png" sizes="32x32">
     <link rel="shortcut icon" sizes="32x32" href="defaii.png">
-    <title>Portail de Travaux HTML</title>
+    <title>Projet WEB defaii</title>
 </head>
 <body>
-    <h1>Portail de Travaux HTML</h1>
+    <script>
+        // Sauvegarde le titre original de la page
+        var originalTitle = document.title;
+        var originalFavicon = "defaii.png"; // Chemin du favicon normal
+        var awayFavicon = "attention.png";
+        function changeFavicon(src) {
+            var link = document.querySelector("link[rel*='icon']");
+            if (link) {
+                link.href = src;
+            }
+        }
+        // Détecte si la page est visible ou cachée
+        document.addEventListener('visibilitychange', function() {
+            if (document.hidden) {
+                // Change le titre quand l'utilisateur quitte l'onglet
+                document.title = "site dangereux";
+                changeFavicon(awayFavicon);
+            } else {
+                // Rétablit le titre quand l'utilisateur revient
+                document.title = originalTitle;
+                changeFavicon(originalFavicon)
+            }
+        });
+    </script>
+    <h1>Portail de projet WEB</h1>
     <div class="container">
         <div class="card" id="lunes">
             
