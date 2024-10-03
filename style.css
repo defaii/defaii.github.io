@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.card a {
+    text-decoration: none;
+    color: #007BFF;
+    font-size: 18px;
+}
+.card a:hover {
+    color: #0056b3;
+}
+#lunes{
+    background-image: url("Gaming\ pur/img/logo.png");
+    background-size: 25%;
+    background-repeat: no-repeat;
+}
+
+#exa1 {
+    background-image: url("HEH/examen/site/img/background.jpg");
+    background-size: 100%;
+}
+#exa1 h3{
+    color: #cd19d6;
+}
+#exa2{
+    background-image: url("HEH/Examen_aout/Site/img/logo.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
