@@ -1,0 +1,168 @@
+@font-face {
+    font-family: "artiste_calligraphy";
+    src: url(fonts/Artistic-Calligraphy.otf);
+}
+
+html{
+    font-family: artiste_calligraphy;
+    background-color: #000000;
+    color: #ffffff;
+}
+body{
+    background-color: #5e1a16 ;
+}
+h1{
+    font-size: 6rem;
+    text-align: center;
+    padding-top: 1rem;
+}
+#menu ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+#menu ul a{
+    text-decoration: none;
+    color: #ffffff;
+}
+#menu ul li{
+    height: 100%;
+}
+#menu ul li:hover{
+    border-bottom: 0.3rem solid #ffffff;
+}
+#menu ul a:hover{
+    color:#ffd600
+}
+#vie{
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+}
+#vie h2{
+    font-size: 5rem;
+}
+#vie p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+#oeuvres{
+    background-color: #a49b89;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    color: #000000;
+}
+#oeuvres h2{
+    font-size: 4rem;
+}
+.tableau{
+    display: flex;
+    flex-direction: column;
+    
+}
+.tableau img{
+    align-self: center;
+    width: 90%;
+}
+.tableau h3{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    align-self: center;
+    text-align: center;
+    font-size: 4rem;
+}
+.tableau p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2.5rem;
+}
+#contact nav div {
+    text-align: center;
+    margin-bottom: 4rem;    
+    margin-top: 4rem;    
+}
+
+#contact nav div a {
+display: inline-block;
+margin: 0 10px;
+}
+#contact img{
+    width: 100px;
+}
+@media screen and (min-width: 900px) {
+    html{
+        padding-left: 5%;
+        margin-right: 5%;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between  ;
+    }
+    #menu{
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    #menu ul{
+        flex-direction: row;
+        font-size: 2.2rem;
+        justify-content: space-evenly  ;
+        width: 100%;
+    }
+
+    #oeuvres{
+        background-color: #a49b89;
+        padding: 2rem;
+        flex-direction: column;
+
+    }
+    #oeuvres h2{
+        font-size: 4rem;
+    }
+    #sens{
+        display: flex;
+        flex-direction: row;
+    }
+    .tableau{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .tableau img{
+        align-self: center;
+        width: 100%;
+    }
+    .tableau h3{
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        align-self: center;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .tableau p{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.5rem;
+    }
+    #contact nav div {
+        text-align: center;
+        padding-bottom: 4rem;    
+        padding-top: 4rem;    
+        margin-bottom: 0;    
+        margin-top: 0;    
+    }
+    #contact img{
+        width: 50px;
+    }
+}

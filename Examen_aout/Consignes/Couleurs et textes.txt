@@ -1,0 +1,38 @@
+=== COULEURS ===
+
+Fond du menu et du texte explicatif : jaune #f0ce1e
+Fond des liens du menu en hover : noir #000000
+Fond du texte explicatif en version mobile : rgba(0,0,0,0.8)
+Sous-titre "en tournée" : blanc #ffffff
+
+
+=== TYPO ===
+
+Titre en Trajan Pro
+Menu, sous-titre et texte explicatif en Times New Roman
+
+À vous de déterminer les styles, hauteurs de texte et interlignes
+
+
+=== POSITIONS ET AUTRE ===
+
+Pensez à centrer l'arrière-plan et à l'étendre pour qu'il recouvre toujours la partie principale du site.
+
+Il n'y a pas de footer pour ce mockup.
+
+
+=== TEXTE ===
+
+Le Roi en Jaune
+
+Réservation
+Agenda
+Contact
+
+En tournée en Europe du 13 au 28 avril 2023
+
+"Le Roi en Jaune" s’inspire directement du roman de l'écrivain américain Robert W. Chambers, publié en 1895.
+
+L'histoire se déroule dans une ville imaginaire appelée Carcosa, située quelque part dans les États-Unis. Les personnages principaux sont des artistes et des intellectuels new-yorkais qui découvrent un livre ancien appelé "Le Roi en Jaune", qui décrit les règles d'une société secrète dirigée par un roi en jaune. Les personnages qui se plongent dans la lecture du livre sont attirés dans un univers de cauchemars et de délires, qui les mènent finalement à la folie ou à la mort.
+
+Découvrez ou redécouvrez ce classique de l'étrange et de l'horreur à l’origine de bien des œuvres de science-fiction, et toujours populaire dans les milieux occultistes pour sa nature dérangeante.
