@@ -184,26 +184,11 @@ footer {
     text-align: center;
 }
 
-@media screen and (max-width: 800px) {
-    #menu article div {
-        display: flex;
-        flex-direction: column;
-    }
-}
 
 @media screen and (min-width: 400px) {
     #logoimg {
         width: 30%;
         height: 30%;
-    }
-}
-
-@media screen and (min-width: 1300px) {
-    #pannel ul {
-        flex-direction: column;
-        height: 0.8vw;
-        margin: 30px;
-        padding: 15px;
     }
 }
 
@@ -213,8 +198,11 @@ footer {
         height: 25%;
     }
 }
-
 @media screen and (min-width: 800px) {
+    #menu article div {
+        display: flex;
+        flex-direction: column;
+    }
     main article {
         display: flex;
         flex-direction: row;
@@ -290,5 +278,13 @@ footer {
     }
     #aventure article section p{
         font-size: 1.2rem
+    }
+}
+@media screen and (min-width: 1300px) {
+    #pannel ul {
+        flex-direction: column;
+        height: 0.8vw;
+        margin: 30px;
+        padding: 15px;
     }
 }
