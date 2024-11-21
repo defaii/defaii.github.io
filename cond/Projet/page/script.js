@@ -12,6 +12,11 @@ document.addEventListener('DOMContentLoaded', function() {
           menuBurger.classList.toggle('active');
       });
   }
+  const menuLinks = document.querySelector('.menu-links');
+  menuLinks.addEventListener('mouseleave', function () {
+    menuLinks.classList.toggle('active');
+    menuBurger.classList.toggle('active');
+});
 });
 // Dans l'onglet A, au moment du chargement de la page
 window.addEventListener('load', () => {
