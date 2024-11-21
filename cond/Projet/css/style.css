@@ -1,85 +1,134 @@
-/* Styles de base */
+/* Style global de la page */
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #0b0c10;
-    padding: 0;
     background-color: #0b0c10;
     color: #c5c6c7;
-    
-    /* Appliquer l'animation de fondu */
-    animation: fadeIn 2s ease-in-out;
-}
-
-/* Définition de l'animation fadeIn */
-@keyframes fadeIn {
-    from {
-        opacity: 0; /* Départ invisible */
-    }
-    to {
-        opacity: 1; /* Fin visible */
-    }
-}
-
-
- /* Styles de base */
- body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0b0c10;
-    color: #c5c6c7;
-}
-
-/* Styles du conteneur principal */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+    height: 100%;
 }
 
 /* En-tête */
 header {
-    text-align: center;
-    padding: 50px 0;
+    position: relative;
     background-color: #1f2833;
-}
-header h1 {
-    color: #66fcf1;
-    font-size: 2.5em;
-    margin: 0;
-}
-header p {
-    font-size: 1.2em;
-    color: #45a29e;
+    padding: 20px 20px;
+    text-align: center;
 }
 
-/* Section image principale */
+header h1 {
+    font-size: 2.5em;
+    color: #66fcf1;
+    margin: 0;
+}
+
+header p {
+    color: #45a29e;
+    font-size: 1.2em;
+}
+
+/* Menu burger fixe */
+.menu-burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+    padding: 5px;
+    background-color: #0b0c10;
+    border: 2px solid #66fcf1;
+}
+
+.menu-burger .line {
+    width: 100%;
+    height: 4px;
+    background-color: #66fcf1;
+    transition: all 0.3s ease;
+}
+
+/* Menu déroulant */
+.menu-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    flex-direction: column;
+    background-color: #1f2833;
+    position: fixed;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100vh;
+    transition: left 0.3s ease;
+    border-right: 2px solid #66fcf1;
+}
+
+.menu-links li {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.menu-links li a {
+    text-decoration: none;
+    color: #c5c6c7;
+    font-weight: bold;
+    display: block;
+}
+
+.menu-links li a:hover {
+    color: #66fcf1;
+}
+
+/* Classe active pour afficher le menu */
+.menu-links.active {
+    left: 0;
+    display: flex;
+}
+
+.menu-burger.active {
+    left: 220px;
+}
+/* Image principale d'Uranus */
 .hero-image {
-    background-image: url('https://source.unsplash.com/1600x900/?earth,space');
+    background-image: url('https://source.unsplash.com/1600x900/?uranus,space');
     background-size: cover;
     background-position: center;
     height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
+
 .hero-image h2 {
     font-size: 3em;
     margin: 0;
 }
 
-/* Section contenu */
+/* Section contenant les informations */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 section {
     margin: 40px 0;
 }
+
 section h3 {
     font-size: 2em;
     color: #66fcf1;
     margin-bottom: 10px;
 }
+
 section p {
     line-height: 1.6;
     font-size: 1.1em;
